@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFA;
+    color: #080705;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%; /* Takes up the full width of the screen */
+
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #702632;
+    color: white;
+}
+
+.content {
+    display: flex;
+    height: calc(100vh - 100px); /* Adjusts to take up the full height */
+}
+
+.image-section {
+    flex: 1; /* Takes up 50% of the width */
+    display: flex;
+    flex-direction: column; /* Aligns the elements vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFA;
+    position: relative;
+    overflow: hidden;
+}
+
+#car-image {
+    width: 80%; /* Adjusts the width of the image */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #912F40;
+    color: #FFFFFA;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+#prev-car {
+    left: 10px;
+}
+
+#next-car {
+    right: 10px;
+}
+
+.sorting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds space between the options */
+    margin-top: 10px; /* Space between the image and the buttons */
+    background-color: #FFFFFA;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-section {
+    flex: 1; /* Takes up 50% of the width */
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFFFA;
+    overflow-y: auto; /* Allows scrolling if the content overflows */
+}
+
+.car-details {
+    margin-bottom: 20px;
+}
+
+.car-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.edit-button {
+    background-color: #912F40;
+    color: #FFFFFA;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.new-car-button {
+    background-color: #912F40;
+    color: #FFFFFA;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #702632;
+    color: #FFFFFA;
+}
+
+/* Sorting the options */
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #FFFFFA;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-buttons {
+    text-align: right;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    background-color: #702632;
+    color: #FFFFFA;
+    padding: 20px;
+}
